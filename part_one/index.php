@@ -105,6 +105,31 @@
     echo $test;
     echo "<h1>heaaaaaaai</h1>"
 ?>
-</body>
+<!-- class 8 data type  -->
 
+$Total = 15  //int data type
+$Gpa = 15.5  //float data type
+$name = "shant"  //string data type
+$isAdmin = true // boolean data type
+$nullData = ''; // null string
+$data = null //null data type
+
+
+<!-- class 9 var_dump -->
+
+<br>
+<br>
+<br>
+<?php  
+    $names = 'hahas';
+    var_dump($names)
+?>
+
+
+
+
+
+
+
+</body>
 </html>
