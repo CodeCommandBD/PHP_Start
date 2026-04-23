@@ -115,14 +115,18 @@ $nullData = ''; // null string
 $data = null //null data type
 
 
-<!-- class 9 var_dump -->
+<!-- class 9 var_dump  full details show kore-->
 
 <br>
 <br>
 <br>
 <?php  
-    $names = 'hahas';
-    var_dump($names)
+    $names = 'hahas kumar 10';
+    $num = 50;
+    var_dump($names);
+    echo "<br>";
+    echo "<br>";
+    var_dump($num)
 ?>
 
 
