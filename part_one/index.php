@@ -115,7 +115,7 @@ $nullData = ''; // null string
 $data = null //null data type
 
 
-<!-- class 9 var_dump  full details show kore-->
+<!-- class 9 var_dump  full details show kore like data type-->
 
 <br>
 <br>
@@ -123,10 +123,14 @@ $data = null //null data type
 <?php  
     $names = 'hahas kumar 10';
     $num = 50;
+    $isLog = true;
     var_dump($names);
     echo "<br>";
     echo "<br>";
-    var_dump($num)
+    var_dump($num);
+    echo "<br>";
+    echo "<br>";
+    var_dump($isLog)
 ?>
 
 
