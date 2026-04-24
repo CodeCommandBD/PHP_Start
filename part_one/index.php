@@ -152,9 +152,13 @@ $data = null //null data type
 
 <?php 
     $newName = "joy";
+    $school = 'uth';
     echo "<br>";
-    $new = ucwords($newName);
-    echo $new
+    echo "hello". ucwords($newName);
+    echo "<br>";
+    
+    // alternative
+    printf("hello %s my school name is %s", ucwords($newName), ucwords($school) );
 ?>
 
 
