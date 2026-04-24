@@ -1,10 +1,10 @@
 <?php
- $cat =  'tomy';
- $das = 'das'; 
- $price = 500;
- $admin = false;
- $first_name = 'shnato kumar das';
- $full_name = 'first_name'
+$cat =  'tomy';
+$das = 'das';
+$price = 500;
+$admin = false;
+$first_name = 'shnato kumar das';
+$full_name = 'first_name'
 ?>
 
 <!DOCTYPE html>
@@ -22,105 +22,105 @@
         echo "hello";
         ?>
     </h1>
-    <?php 
-        echo "shanto $cat ";
-        
-        echo "kumar $das ";
+    <?php
+    echo "shanto $cat ";
 
-        // easy use with double cote 
-        echo "this is $price taka "; 
+    echo "kumar $das ";
 
-        // SINGLE cote e text dhora hoy
-        echo 'this is $price taka ';
+    // easy use with double cote 
+    echo "this is $price taka ";
 
-        // concut korte dot use kora hoy
-        echo 'this is ' . $price .' taka ';
+    // SINGLE cote e text dhora hoy
+    echo 'this is $price taka ';
 
-        echo $cat;
+    // concut korte dot use kora hoy
+    echo 'this is ' . $price . ' taka ';
 
-        echo $admin;
+    echo $cat;
+
+    echo $admin;
     ?>
     <br>
     <br>
     <!-- double dollar sign dile 1st dollar sign er modde thaka arekta dollar sign variable hoye jay -->
-    <?php 
-        echo $$full_name
-    
+    <?php
+    echo $$full_name
+
     ?>
-<br>
-<br>
+    <br>
+    <br>
     <!-- variable je kono jaygay set kora jay  -->
-     <?php 
-        $data = 'mentos'
-     ?>
+    <?php
+    $data = 'mentos'
+    ?>
 
-     <h1><?php echo "this is $data" ?></h1>
-
-
-
-     <br>
-     <br>
-     <!-- CLASS 5 -->
-     <?php 
-        $first_price = 10000;
-        $second_price = 5000;
-        $total_price = $first_price + $second_price
-     ?>
-     <h2><?php echo "this is a big event so its total price is $total_price" ?></h2>
-
-     <!-- class 6 constant -->
-
-     <?php 
-        define("NAME", "Riday");
-        define("AMOUNT", 500);
-    
+    <h1><?php echo "this is $data" ?></h1>
 
 
-        echo NAME ."<br>";
-        
-        // or 
-        echo constant("NAME");
 
-        echo "<br>";
-        echo "<br>";
-        echo AMOUNT
-     ?>
-     <br> 
-     <br> 
+    <br>
+    <br>
+    <!-- CLASS 5 -->
+    <?php
+    $first_price = 10000;
+    $second_price = 5000;
+    $total_price = $first_price + $second_price
+    ?>
+    <h2><?php echo "this is a big event so its total price is $total_price" ?></h2>
+
+    <!-- class 6 constant -->
+
+    <?php
+    define("NAME", "Riday");
+    define("AMOUNT", 500);
+
+
+
+    echo NAME . "<br>";
+
+    // or 
+    echo constant("NAME");
+
+    echo "<br>";
+    echo "<br>";
+    echo AMOUNT
+    ?>
+    <br>
+    <br>
     <!-- part 2 -->
-     <?php 
-        define("NAME2", "shna");
-        $text = "constant";
+    <?php
+    define("NAME2", "shna");
+    $text = "constant";
 
-        echo "your Name is " .$text("NAME2")
-     ?>
+    echo "your Name is " . $text("NAME2")
+    ?>
 
-<br>
-<br>
+    <br>
+    <br>
 
-<!-- class 7  echo vs print -->
+    <!-- class 7  echo vs print -->
 
-<?php 
+    <?php
     $test = print("helo");
     echo $test;
     echo "<h1>heaaaaaaai</h1>"
-?>
-<!-- class 8 data type  -->
+    ?>
+    <!-- class 8 data type  -->
 
-$Total = 15  //int data type
-$Gpa = 15.5  //float data type
-$name = "shant"  //string data type
-$isAdmin = true // boolean data type
-$nullData = ''; // null string
-$data = null //null data type
+    $Total = 15 //int data type
+    $Gpa = 15.5 //float data type
+    $name = "shant" //string data type
+    $isAdmin = true // boolean data type
+    $nullData = ''; // null string
+    $data = null //null data type
 
 
-<!-- class 9 var_dump  full details show kore like data type *************-->
+    <!-- class 9 var_dump  full details show kore like data type *************-->
 
-<br>
-<br>
-<br>
-<?php  
+    <br>
+    <br>
+    <br>
+    <?php
     $names = 'hahas kumar 10';
     $num = 50;
     $isLog = true;
@@ -136,48 +136,78 @@ $data = null //null data type
     // or 
     var_dump($names, $num)
 
-?>
+    ?>
 
-<!-- class 10 printf -->
+    <!-- class 10 printf -->
 
-<?php 
+    <?php
     $done = "shan";
     // echo $done;
 
     printf($done)
-?>
-</br>
-</br>
-<!-- part 2  ucwords text capital word kore-->
+    ?>
+    </br>
+    </br>
+    <!-- part 2  ucwords text capital word kore-->
 
-<?php 
+    <?php
     $newName = "joy";
     $school = 'uth';
     echo "<br>";
-    echo "hello". ucwords($newName);
+    echo "hello" . ucwords($newName);
     echo "<br>";
-    
+
     // alternative
-    printf("hello %s my school name is %s", ucwords($newName), ucwords($school) );
-?>
+    printf("hello %s my school name is %s", ucwords($newName), ucwords($school));
+    ?>
 
-<!-- part 3 html  -->
+    <!-- part 3 html  -->
 
-<?php 
+    <?php
     $fname = "miral";
     $lname = "vogle";
-    $html_block= "
+    $html_block = "
         <div>
             <h1>%s</h1>
             <h2>%s</h2>
         </div>
     ";
-    
-    printf($html_block, ucwords($fname) , ucwords($lname) )
-?>
+
+    printf($html_block, ucwords($fname), ucwords($lname))
+    ?>
 
 
-<!-- class 11 printf 2nd part -->
+    <!-- class 11 printf 2nd part -->
+
+    <br>
+    <?php
+
+    $amount = 100;
+    printf("hello %d", $amount);
+
+
+    echo "<br>";
+
+    $gpa = 4.55;
+    printf("my gpa is %f", $gpa);
+
+    echo "<br>";
+
+    $gpa = 4.55;
+    printf("my gpa is %f", $gpa);
+
+
+    echo "<br>";
+    echo "<br>";
+
+    $test_1 = 10;
+    $test_2 = 50;
+
+    printf("amount is %d and another amount is %d", $test_1, $test_2);
+    echo "<br>";
+    echo "<br>";
+
+    ?>
 
 
 
@@ -185,5 +215,37 @@ $data = null //null data type
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
+
 </html>
