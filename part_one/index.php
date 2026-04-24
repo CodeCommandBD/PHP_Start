@@ -115,7 +115,7 @@ $nullData = ''; // null string
 $data = null //null data type
 
 
-<!-- class 9 var_dump  full details show kore like data type-->
+<!-- class 9 var_dump  full details show kore like data type *************-->
 
 <br>
 <br>
@@ -130,7 +130,31 @@ $data = null //null data type
     var_dump($num);
     echo "<br>";
     echo "<br>";
-    var_dump($isLog)
+    var_dump($isLog);
+    echo "<br>";
+    echo "<br>";
+    // or 
+    var_dump($names, $num)
+
+?>
+
+<!-- class 10 printf -->
+
+<?php 
+    $done = "shan";
+    // echo $done;
+
+    printf($done)
+?>
+</br>
+</br>
+<!-- part 2  ucwords text capital word kore-->
+
+<?php 
+    $newName = "joy";
+    echo "<br>";
+    $new = ucwords($newName);
+    echo $new
 ?>
 
 
