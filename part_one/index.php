@@ -328,8 +328,38 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 16 comparison operators -->
 
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $opa = 50;
+    $opa3 = 25;
 
+    $Main_opa = $opa > $opa3;
+    $Main_opa1 = $opa < $opa3;
+    $Main_opa2 = $opa == $opa3;
+    $Main_opa3 = $opa != $opa3;
+    $Main_opa4 = $opa === $opa3;
+    $Main_opa5 = $opa !== $opa3;
+
+    // var_dump($Main_opa1) ;
+    echo $Main_opa;
+    echo "<br>";
+    echo $Main_opa1;
+    echo "<br>";
+    echo $Main_opa2;
+    echo "<br>";
+    echo $Main_opa3;
+    echo "<br>";
+    echo $Main_opa4;
+    echo "<br>";
+    echo $Main_opa5;
+    echo "<br>";
+
+    ?>
+
+  <!-- class 17 spaceship oparators -->
 
 
 
