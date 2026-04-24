@@ -316,7 +316,17 @@ $full_name = 'first_name'
 
     <!-- class 15 concatenation  -->
 
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $F_name = "shan";
+    $L_name = "kum";
 
+    $FullName = $F_name . " " . $L_name;
+
+    echo $FullName;
+
+    ?>
 
 
 
