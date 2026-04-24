@@ -161,6 +161,24 @@ $data = null //null data type
     printf("hello %s my school name is %s", ucwords($newName), ucwords($school) );
 ?>
 
+<!-- part 3 html  -->
+
+<?php 
+    $fname = "miral";
+    $lname = "vogle";
+    $html_block= "
+        <div>
+            <h1>%s</h1>
+            <h2>%s</h2>
+        </div>
+    ";
+    
+    printf($html_block, ucwords($fname) , ucwords($lname) )
+?>
+
+
+<!-- class 11 printf 2nd part -->
+
 
 
 
