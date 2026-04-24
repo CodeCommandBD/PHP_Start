@@ -182,21 +182,51 @@ $full_name = 'first_name'
     <br>
     <?php
 
+    // int number
     $amount = 100;
     printf("hello %d", $amount);
 
 
     echo "<br>";
 
+    // floting type number 
     $gpa = 4.55;
-    printf("my gpa is %f", $gpa);
+    printf("my gpa is %.2f", $gpa);
+
+    echo "<br>";
+    // floting * int number
+    $totalAmout = 10 * 5.5;
+
+    printf("total amount: %.0f", $totalAmout);
 
     echo "<br>";
 
-    $gpa = 4.55;
-    printf("my gpa is %f", $gpa);
+    // string type 10 character nibe jodi na thake character bydefualt left e ekta space hoy
+    $leftname = "raja";
+    printf("[%10s]", $leftname);
+
+    echo "<br>";
+
+    // right e space hobe jodi extra character na thake
+
+    $rightname = "raja";
+    printf("[%-10s]", $rightname);
 
 
+
+    // jodi kono custom character amr mon moto chai 
+    echo "<br>";
+    $customname = "raja";
+    printf("[%'#10s]", $customname);
+
+    // 10 ta character er modde 5ta character nibe baki gulu # diye fill kore dibe
+    echo "<br>";
+    $customname = "rajas";
+    printf("[%'#10.5s]", $customname);
+
+    echo "<br>";
+
+    // 
     echo "<br>";
     echo "<br>";
 
@@ -207,6 +237,16 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
 
+    // 2nd argument ke 1st value te set hobe 
+    echo "<br>";
+    echo "<br>";
+
+    $test_3 = 10;
+    $test_4 = 50;
+
+    printf("amount is %2\$d and another amount is %1\$d", $test_3, $test_4);
+    echo "<br>";
+    echo "<br>";
     ?>
 
 
@@ -239,13 +279,13 @@ $full_name = 'first_name'
 
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
