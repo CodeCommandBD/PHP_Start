@@ -249,9 +249,72 @@ $full_name = 'first_name'
     echo "<br>";
     ?>
 
+    <!-- class 12 arithmatic operator -->
+
+    +
+    -
+    /
+    *
+    %
+    <?php
+    $num = 3 + 5;
+    echo $num;
+    // var_dump($num)
+
+    ?>
+
+
+    <!-- class 13 assignment operator -->
+
+    <!-- = -->
+    <!-- += -->
+    <!-- -= -->
+    <!-- *= -->
+    <!-- /= -->
+    <!-- %= -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $priceNew = 10;
+
+    $priceNew += 5;
+
+    echo $priceNew
+
+    ?>
 
 
 
+    <!-- class 14 increment / decrement -->
+    <!-- post ++ -->
+    <!-- ++ pre-->
+    <!-- post-- -->
+    <!-- --pre -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $newOne = 10;
+
+    // post e old value return kore
+    echo $newOne++;
+    echo "<br>";
+    echo $newOne;
+
+    echo "<br>";
+    echo "<br>";
+
+    // pre te new value return kore 
+    echo  ++$newOne;
+    echo "<br>";
+    echo $newOne
+    ?>
+
+
+    <!-- class 15 concatenation  -->
 
 
 
