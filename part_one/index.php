@@ -491,12 +491,12 @@ $full_name = 'first_name'
     $count = 1;
     $number = 1;
 
-    while ($count <= 5){
+    while ($count <= 5) {
         echo "hello <br>";
-        $count ++;
+        $count++;
     }
     echo "<br>";
-    while ($number <= 5){
+    while ($number <= 5) {
         echo "hello $number <br>";
         $number += 2;
     }
@@ -504,19 +504,34 @@ $full_name = 'first_name'
 
     <form action="">
         <select name="" id="">
-            <?php 
-                $year = 2000;
-                while ($year <= 2030){
-                    echo "<option value='$year'>$year</option>";
-                    $year++;
-                }
+            <?php
+            $year = 2000;
+            while ($year <= 2030) {
+                echo "<option value='$year'>$year</option>";
+                $year++;
+            }
             ?>
         </select>
     </form>
 
 
 
+    <!-- class 28  for loop -->
 
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    for ($count = 1; $count <= 10; $count += 2) {
+    ?>
+        <h4>hello <br><?php echo "<br>"; ?></h4>
+
+
+    <?php
+    }
+    ?>
+
+    <!-- class 28  for loop -->
 
 
 
