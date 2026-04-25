@@ -568,6 +568,19 @@ $full_name = 'first_name'
     ?>
 
     <!-- class 31 nested loop -->
+
+    <?php 
+        echo "<br>";
+        
+        for( $outlist = 1; $outlist <=3 ; $outlist++){
+            echo "list $outlist <br>";
+            for($inerlist = 1; $inerlist <= 3; $inerlist++) {
+                echo "-------inner list $inerlist <br>";
+            }
+        }
+    
+    ?>
+
     
 
 
