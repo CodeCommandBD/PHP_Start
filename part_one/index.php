@@ -502,6 +502,18 @@ $full_name = 'first_name'
     }
     ?>
 
+    <form action="">
+        <select name="" id="">
+            <?php 
+                $year = 2000;
+                while ($year <= 2030){
+                    echo "<option value='$year'>$year</option>";
+                    $year++;
+                }
+            ?>
+        </select>
+    </form>
+
 
 
 
