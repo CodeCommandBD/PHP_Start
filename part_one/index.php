@@ -449,6 +449,20 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 24  Logical NOT ! -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+    $age = 10;
+
+    $user = !($age == 25) ? "Logical NOT is found": "Logical NOT is not found";
+
+    echo $user;
+
+    ?>
+
 
 
 
