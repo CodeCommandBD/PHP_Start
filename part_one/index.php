@@ -420,6 +420,22 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 22  Logical OR ||-->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+    $age = 10;
+
+    $user = $age == 25 || $age == 26 ? "admin": "not found";
+
+    echo $user;
+
+    ?>
+
+
 
 
 
