@@ -531,7 +531,21 @@ $full_name = 'first_name'
     }
     ?>
 
-    <!-- class 28  for loop -->
+    <!-- class 29  breck statement -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+
+    for ($count = 1; $count <= 10; $count++) {
+        echo $count . " hello <br>";
+        if ($count == 5) {
+            echo "5 is here <br>";
+            break;
+        }
+    }
+    ?>
 
 
 
