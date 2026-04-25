@@ -628,7 +628,7 @@ $full_name = 'first_name'
     ?>
 
     <!-- class 36 isset() -->
-     
+
     <!-- isset hocce variable ta defined kina eita check korar jonno use kora hoy -->
     <?php
     echo "<br>";
@@ -645,7 +645,22 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 37 null coalescing operator -->
 
+    <!-- null coalesceing operator hocce variable ta defined kina ba null kina eita check korar jonno use kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $name = "shan";
+    $age = null;
+
+    $result = $age ?? "not found";
+
+    echo $result;
+
+    ?>
 
 
 
