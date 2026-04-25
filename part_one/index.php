@@ -429,7 +429,7 @@ $full_name = 'first_name'
 
     $age = 10;
 
-    $user = $age == 25 || $age == 26 ? "Logical OR admin": "Logical OR not found";
+    $user = $age == 25 || $age == 26 ? "Logical OR admin" : "Logical OR not found";
 
     echo $user;
 
@@ -443,7 +443,7 @@ $full_name = 'first_name'
 
     $age = 10;
 
-    $user = $age == 25 && $age == 10 ? "Logical AND": "Logical And not found";
+    $user = $age == 25 && $age == 10 ? "Logical AND" : "Logical And not found";
 
     echo $user;
 
@@ -457,9 +457,30 @@ $full_name = 'first_name'
 
     $age = 10;
 
-    $user = !($age == 25) ? "Logical NOT is found": "Logical NOT is not found";
+    $user = !($age == 25) ? "Logical NOT is found" : "Logical NOT is not found";
 
     echo $user;
+
+    ?>
+    <!-- class 25  Nested if -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+    $user = 'more';
+    $pass = 'han';
+
+    if ($user == 'more') {
+        if ($pass == 'han') {
+            echo "password right";
+        } else {
+            echo "password wrong";
+        }
+    } else {
+        echo "invalid user";
+    }
+
 
     ?>
 
