@@ -359,10 +359,34 @@ $full_name = 'first_name'
 
     ?>
 
-  <!-- class 17 spaceship oparators -->
+    <!-- class 17 spaceship oparators -->
+    <!-- jodi soman hoy 0 -->
+    <!-- jodi left boro hoy 1 -->
+    <!-- jodi right  boro hoy -1 -->
 
+    <?php
+    echo "<br>";
+    $num1 = 30;
+    $num2 = 40;
+    $totalNum = $num1 <=> $num2;
+    echo $totalNum
+    ?>
 
+    <!-- class 18 if Else -->
 
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $condition = 10;
+
+    if ($condition == 11) {
+        echo "this is " . $condition;
+    }else{
+        echo "this is not" . $condition;
+    }
+
+    ?>
 
 
 
