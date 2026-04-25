@@ -562,27 +562,54 @@ $full_name = 'first_name'
             continue;
         }
         echo "5 is not here that <br>";
-
     }
 
     ?>
 
     <!-- class 31 nested loop -->
 
-    <?php 
-        echo "<br>";
-        
-        for( $outlist = 1; $outlist <=3 ; $outlist++){
-            echo "list $outlist <br>";
-            for($inerlist = 1; $inerlist <= 3; $inerlist++) {
-                echo "-------inner list $inerlist <br>";
-            }
+    <?php
+    echo "<br>";
+
+    for ($outlist = 1; $outlist <= 3; $outlist++) {
+        echo "list $outlist <br>";
+        for ($inerlist = 1; $inerlist <= 3; $inerlist++) {
+            echo "-------inner list $inerlist <br>";
         }
-    
+    }
+
     ?>
 
-    
+    <!-- class 32 goto statement and advance break -->
+    <?php
+    echo "<br>";
+    echo "<br>";
 
+    for ($outlist = 1; $outlist <= 3; $outlist++) {
+        echo "list $outlist <br>";
+        for ($inerlist = 1; $inerlist <= 3; $inerlist++) {
+            echo "-------inner list $inerlist <br>";
+            if ($outlist == 2 && $inerlist == 1) {
+                break 2; //duita loop theke ber hoye jabe tai break 2 use kora hoy
+            }
+        }
+    }
+
+    echo "end <br>";
+    ?>
+
+    <!-- class 34 sprintf -->
+
+    <?php
+
+        $name = "shan";
+        $age = 25;
+        // sprintf er kaj holo string make kore but print kore na .. make kore variable e assign kore pare print kore 
+
+        $addinvariable = sprintf("<p>name is %2\$d and age is %1\$s</p>",$name, $age);
+        echo $addinvariable;
+
+    ?>
 
 
 
