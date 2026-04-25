@@ -397,14 +397,28 @@ $full_name = 'first_name'
 
     if ($condition == 11) {
         echo "this is " . $condition;
-    } else if($condition == 10){
+    } else if ($condition == 10) {
         echo "this is not" . $condition;
-    } else{
+    } else {
         echo "this is faild";
     };
 
     ?>
-    
+
+    <!-- class 20 ternary operator -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $user = "";
+    $age = 25;
+
+    $user = ($age == 25) ? "admin" : "not found";
+
+    echo $user;
+
+    ?>
 
 
 
@@ -423,7 +437,8 @@ $full_name = 'first_name'
 
 
 
-    
+
+
     <br>
     <br>
     <br>
