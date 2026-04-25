@@ -602,16 +602,48 @@ $full_name = 'first_name'
 
     <?php
 
-        $name = "shan";
-        $age = 25;
-        // sprintf er kaj holo string make kore but print kore na .. make kore variable e assign kore pare print kore 
+    $name = "shan";
+    $age = 25;
+    // sprintf er kaj holo string make kore but print kore na .. make kore variable e assign kore pare print kore 
 
-        $addinvariable = sprintf("<p>name is %2\$d and age is %1\$s</p>",$name, $age);
-        echo $addinvariable;
+    $addinvariable = sprintf("<p>name is %2\$d and age is %1\$s</p>", $name, $age);
+    echo $addinvariable;
 
     ?>
 
+    <!-- class 35 alternative syntax -->
 
+    <?php
+
+    $condition = 5;
+
+    if ($condition == 10):
+        echo "condition 10";
+    elseif ($condition == 5):
+        echo "condition 5";
+    else:
+        echo "condition faild";
+    endif;
+
+    ?>
+
+    <!-- class 36 isset() -->
+     
+    <!-- isset hocce variable ta defined kina eita check korar jonno use kora hoy -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $name = "shan";
+    $age = 25;
+
+    if (isset($name) && isset($age)) {
+        echo "name is " . $name . " and age is " . $age;
+    } else {
+        echo "name and age is not found";
+    }
+
+    ?>
 
 
 
