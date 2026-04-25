@@ -382,12 +382,29 @@ $full_name = 'first_name'
 
     if ($condition == 11) {
         echo "this is " . $condition;
-    }else{
+    } else {
         echo "this is not" . $condition;
     }
 
     ?>
 
+    <!-- class 19 if else else if -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $condition = 10;
+
+    if ($condition == 11) {
+        echo "this is " . $condition;
+    } else if($condition == 10){
+        echo "this is not" . $condition;
+    } else{
+        echo "this is faild";
+    };
+
+    ?>
+    
 
 
 
@@ -406,7 +423,7 @@ $full_name = 'first_name'
 
 
 
-    <br>
+    
     <br>
     <br>
     <br>
