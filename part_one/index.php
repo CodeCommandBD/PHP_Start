@@ -662,6 +662,35 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 38 Function -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function nickName() {
+        echo "shanon <br>";
+        echo "saim <br>";
+        echo "nabil <br>";
+    }
+
+    nickName();
+    ?>
+
+    <!-- class 39 Parameter Function -->
+    
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function nick($name1, $name2, $name3) {
+        echo "$name1 <br>";
+        echo "$name2 <br>";
+        echo "$name3 <br>";
+    };
+
+    nick("shanon", "saim", "nabil");
+    ?>
 
 
 
