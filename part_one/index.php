@@ -483,6 +483,24 @@ $full_name = 'first_name'
 
 
     ?>
+    <!-- class 26  while loop -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $count = 1;
+    $number = 1;
+
+    while ($count <= 5){
+        echo "hello <br>";
+        $count ++;
+    }
+    echo "<br>";
+    while ($number <= 5){
+        echo "hello $number <br>";
+        $number += 2;
+    }
+    ?>
 
 
 
