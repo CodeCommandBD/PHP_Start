@@ -429,12 +429,25 @@ $full_name = 'first_name'
 
     $age = 10;
 
-    $user = $age == 25 || $age == 26 ? "admin": "not found";
+    $user = $age == 25 || $age == 26 ? "Logical OR admin": "Logical OR not found";
 
     echo $user;
 
     ?>
 
+    <!-- class 23  Logical AND &&-->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+    $age = 10;
+
+    $user = $age == 25 && $age == 10 ? "Logical AND": "Logical And not found";
+
+    echo $user;
+
+    ?>
 
 
 
