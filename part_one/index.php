@@ -547,6 +547,28 @@ $full_name = 'first_name'
     }
     ?>
 
+    <!-- class 30 continue -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+
+    for ($count = 1; $count <= 10; $count++) {
+        echo $count . " hello <br>";
+        if ($count == 5) {
+            echo "5 is here <br>";
+            continue;
+        }
+        echo "5 is not here that <br>";
+
+    }
+
+    ?>
+
+    <!-- class 31 nested loop -->
+    
 
 
 
