@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 $cat =  'tomy';
 $das = 'das';
 $price = 500;
@@ -668,7 +669,8 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
 
-    function nickName() {
+    function nickName()
+    {
         echo "shanon <br>";
         echo "saim <br>";
         echo "nabil <br>";
@@ -678,12 +680,13 @@ $full_name = 'first_name'
     ?>
 
     <!-- class 39 Parameter Function -->
-    
+
     <?php
     echo "<br>";
     echo "<br>";
 
-    function nick($name1, $name2, $name3) {
+    function nick($name1, $name2, $name3)
+    {
         echo "$name1 <br>";
         echo "$name2 <br>";
         echo "$name3 <br>";
@@ -691,6 +694,29 @@ $full_name = 'first_name'
 
     nick("shanon", "saim", "nabil");
     ?>
+
+
+
+    <!-- class 40 strict type argument -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function sum(int $a, int $b) {
+        $c = $a + $b;
+        echo "total: " . $c . "<br>";
+    }
+    sum(10, 5);
+
+    ?>;
+
+
+
+
+
+
+
 
 
 
