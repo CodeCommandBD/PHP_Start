@@ -1078,7 +1078,64 @@ $full_name = 'first_name'
     ?>
     <br>
 
+    <!-- class 59 Add New Data to PHP Multidimensional Arrays -->
+    
+    
+    <br>
+    <br>
+    <!-- multidimensional index array add new data -->
+    <?php
+    echo "<br>";
+    echo "<br>";
 
+    $student_info = [
+        ['shanto', 25, true, 15.5],
+        ['saim', 22, false, 16.7],
+    ];
+    
+    $student_info[] = ["garib", 25, false, 1.7];
+
+    pri_arr($student_info);
+    ?>
+    <br>
+    <br>
+    
+    
+    <!-- multidimensional associative array add new data -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $student_info = [
+        [
+            'name' => "shanto",
+            'age' => 25,
+            'isLogge' => true,
+            'gpa' => 3.8
+        ],
+        [
+            'name' => "saim",
+            'age' => 22,
+            'isLogge' => true,
+            'gpa' => 3.7
+        ],
+        [
+            'name' => "nabil",
+            'age' => 20,
+            'isLogge' => true,
+            'gpa' => 3.9
+        ]
+    ];
+
+    $student_info[] = [
+        'name' => "arif",
+        'age' => 20,
+        'isLogge' => true,
+        'gpa' => 3.9
+    ];
+
+    pri_arr($student_info);
+    ?>
 
 
 
