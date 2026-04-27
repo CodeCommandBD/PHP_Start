@@ -844,11 +844,11 @@ $full_name = 'first_name'
     echo "<br><br>";
     
     
-    function sumMixedType(mixed ...$numbers): mixed
+    function sumMixedType(mixed $numbers, mixed $numbers2): mixed
     {
-        return $numbers;
+        return $numbers+$numbers2;
     }
-    $result = sumMixedType(10, 5, "hello");
+    $result = sumMixedType(10, "20");
     echo $result;
     ?>
 
