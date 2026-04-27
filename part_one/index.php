@@ -840,29 +840,51 @@ $full_name = 'first_name'
     ?>
     <!-- class 49 mixed type -->
 
-    <?php 
+    <?php
     echo "<br><br>";
-    
-    
+
+
     function sumMixedType(mixed $numbers, mixed $numbers2): mixed
     {
-        return $numbers+$numbers2;
+        return $numbers + $numbers2;
     }
     $result = sumMixedType(10, "20");
     echo $result;
     ?>
 
     <!-- class 50 nullable type-->
-    <?php 
+    <?php
     echo "<br><br>";
-    
+
     function sumNullableType(?int $numbers, ?int $numbers2): ?int
     {
-        return $numbers+$numbers2;
+        return $numbers + $numbers2;
     }
     $result = sumNullableType(10, null);
     echo $result;
     ?>
+
+
+    <!-- class 51 call by value and call by reference -->
+    <?php
+    echo "<br><br>";
+
+    function sumCallByValue(string &$name): void
+    {
+        $name = "tomy";
+        echo $name;
+    }
+
+    $newName = "mojo";
+
+    sumCallByValue($newName);
+    echo "<br>";
+    echo $newName;
+
+    ?>
+
+    <!-- class 52 -->
+
 
 
     <br>
