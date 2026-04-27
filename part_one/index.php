@@ -1002,7 +1002,81 @@ $full_name = 'first_name'
     }
     ?>
 
-<!--  -->
+    <!-- class 58  multidimensional arrays-->
+
+    <!-- single-dimensional index arrays -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $books = [
+        "C programming",
+        "PHP programming",
+        "Python programming",
+        "java"
+    ];
+
+    echo $books[0];
+    ?>
+
+    <br><br>
+
+    <!-- multidimensional index arrays -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $students = [
+        ["shanto", 25, 57],
+        ["saim", 22, 65],
+        ["nabil", 20, 45],
+    ];
+
+    echo $students[0][1];
+    ?>
+
+    <!-- single-dimensional associative array -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $student_info = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57
+    ];
+
+    pri_arr($student_info);
+    ?>
+
+    <!-- multidimensional associative arrays -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $users = [
+        [
+            'name' => "shanto",
+            'age' => 25,
+            'email' => "[EMAIL_ADDRESS]"
+        ],
+        [
+            'name' => "saim",
+            'age' => 22,
+            'email' => "[EMAIL_ADDRESS]"
+        ],
+        [
+            'name' => "nabil",
+            'age' => 20,
+            'email' => "[EMAIL_ADDRESS]"
+        ]
+    ];
+
+    echo $users[0]['name'];
+
+    ?>
+    <br>
 
 
 
