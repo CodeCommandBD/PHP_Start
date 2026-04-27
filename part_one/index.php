@@ -985,6 +985,25 @@ $full_name = 'first_name'
     <br>
 
 
+    <!-- calss 57 forEach loop -->
+    <?php
+    echo "<br><br>";
+    $books = [
+        'amount' => 20,
+        "name" => "shanto",
+        "isLoggedIn" => true,
+        "message " => "hello "
+    ];
+
+    echo "<br>";
+
+    foreach ($books as $key => $value) {
+        echo "<h2> 'key: $key ===> 'value: $value</h2>" . "<br>";
+    }
+    ?>
+
+<!--  -->
+
 
 
 
