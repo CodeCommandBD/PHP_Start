@@ -923,7 +923,7 @@ $full_name = 'first_name'
 
     $names = ["C programming", "PHP programming", "Python programming"];
 
-     
+
     // add value
     echo $names[3] = "C++";
     // or
@@ -957,6 +957,32 @@ $full_name = 'first_name'
     echo count($books);
 
     ?>
+
+    <!-- class 56 associative array -->
+    <br>
+    <br>
+    <?php
+    echo "<br><br>";
+    $books = [
+        'amount' => 20,
+        "name" => "shanto",
+        "isLoggedIn" => true,
+        "message " => "hello "
+    ];
+
+    echo "<br>";
+
+
+    function pri_arr($arr)
+    {
+        echo '<pre>';
+        print_r($arr);
+        echo '</pre>';
+    }
+
+    pri_arr($books);
+    ?>
+    <br>
 
 
 
