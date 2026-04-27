@@ -821,14 +821,24 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
 
-    function sumUnionType(int $a, int $b) : int
+    function sumUnionType(int | float $a, int | float $b): int | float
     {
         $c = $a + $b;
         return  $c;
     }
-    $result = sumUnionType(10, 20);
+    $result = sumUnionType(10.5, 22);
     echo $result;
+
+    echo "<br><br>";
+    function test(): void
+    {
+        echo "Hello World";
+    }
+
+    $result = test();
+    echo "test function";
     ?>
+    <!--  -->
 
 
 
