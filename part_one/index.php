@@ -749,38 +749,55 @@ $full_name = 'first_name'
 
     <!-- class 44  local variable scopes-->
 
-    <?php 
-    
-    function sumWithlocal(){
+    <?php
+
+    function sumWithlocal()
+    {
         $add = 10;
         $addtwo = 10;
 
         $total = $add + $addtwo;
-        echo "total: ".$total;
+        echo "total: " . $total;
     }
     sumWithlocal();
-    
+
     ?>
 
-    <!-- class 44  global variable scopes-->
+    <!-- class 45  global variable scopes-->
 
-    <?php 
+    <?php
     echo "<br>";
     echo "<br>";
     $globalvar = 50;
-    function sumWithglobal(){
+    function sumWithglobal()
+    {
         global $globalvar;
         global $myName;
-        
+
         $myName = "han";
-        echo $globalvar;    
+        echo $globalvar;
     }
     sumWithglobal();
-    
+
     ?>
 
 
+    <!-- class 46 static variable-->
+    <?php
+    echo "<br>";
+    echo "<br>";
 
+    function sumStatic() {
+        static $count = 0;
+        $count++;
+        echo $count . "<br>";
+    }
+    sumStatic();
+    sumStatic();
+    sumStatic();
+    sumStatic();
+    ?>
+    
 
 
 
