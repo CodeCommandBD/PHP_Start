@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 $cat =  'tomy';
 $das = 'das';
@@ -703,7 +704,8 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
 
-    function sum(int $a, int $b) {
+    function sum(int $a, int $b)
+    {
         $c = $a + $b;
         echo "total: " . $c . "<br>";
     }
@@ -712,12 +714,38 @@ $full_name = 'first_name'
     ?>;
 
 
+    <!-- class 41 Function Default Argument -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function fullNames($firstName, $lastName, $another = " ")
+    {
+        echo "full Name: " . $firstName . $another . $lastName . "<br>";
+    }
+
+    fullNames("shan", "hanif");
+
+    ?>
 
 
 
+    <!-- class 42  named argument-->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function addName($firstName, $lastName)
+    {
+        echo "name is :" . $firstName . " " . $lastName;
+    }
+
+    addName(lastName: "hanif", firstName: "shan");
 
 
-
+    ?>
 
 
 
