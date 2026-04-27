@@ -946,10 +946,17 @@ $full_name = 'first_name'
     echo "</pre>";
     ?>
 
+
+
     <!-- class 55  array count -->
 
 
+    <?php
+    echo "<br><br>";
+    $books = ["C programming", "PHP programming", "Python programming", "java"];
+    echo count($books);
 
+    ?>
 
 
 
