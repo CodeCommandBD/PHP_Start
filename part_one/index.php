@@ -852,6 +852,17 @@ $full_name = 'first_name'
     echo $result;
     ?>
 
+    <!-- class 50 nullable type-->
+    <?php 
+    echo "<br><br>";
+    
+    function sumNullableType(?int $numbers, ?int $numbers2): ?int
+    {
+        return $numbers+$numbers2;
+    }
+    $result = sumNullableType(10, null);
+    echo $result;
+    ?>
 
 
     <br>
