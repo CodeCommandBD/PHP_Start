@@ -731,7 +731,7 @@ $full_name = 'first_name'
 
 
 
-    <!-- class 42  named argument-->
+    <!-- class 43  named argument-->
 
     <?php
     echo "<br>";
@@ -747,6 +747,37 @@ $full_name = 'first_name'
 
     ?>
 
+    <!-- class 44  local variable scopes-->
+
+    <?php 
+    
+    function sumWithlocal(){
+        $add = 10;
+        $addtwo = 10;
+
+        $total = $add + $addtwo;
+        echo "total: ".$total;
+    }
+    sumWithlocal();
+    
+    ?>
+
+    <!-- class 44  global variable scopes-->
+
+    <?php 
+    echo "<br>";
+    echo "<br>";
+    $globalvar = 50;
+    function sumWithglobal(){
+        global $globalvar;
+        global $myName;
+        
+        $myName = "han";
+        echo $globalvar;    
+    }
+    sumWithglobal();
+    
+    ?>
 
 
 
