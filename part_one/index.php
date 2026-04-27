@@ -883,8 +883,15 @@ $full_name = 'first_name'
 
     ?>
 
-    <!-- class 52 -->
+    <!-- class 52 arrays -->
 
+    <?php 
+    echo "<br><br>";
+    
+    $books = ["C programming", "PHP programming", "Python programming"];
+    echo $books[0];
+    
+    ?>
 
 
     <br>
