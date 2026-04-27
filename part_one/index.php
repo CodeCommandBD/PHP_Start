@@ -885,13 +885,75 @@ $full_name = 'first_name'
 
     <!-- class 52 arrays -->
 
-    <?php 
+    <?php
     echo "<br><br>";
-    
+
     $books = ["C programming", "PHP programming", "Python programming"];
     echo $books[0];
-    
+
     ?>
+
+    <!-- class 53 display arrays -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $books = ["C programming", "PHP programming", 500, true, "hello"];
+
+    print_arr($books);
+
+
+    function print_arr(array $arr): void
+    {
+        echo "<pre>";
+        print_r($arr);
+        echo "</pre>";
+    }
+    ?>
+
+
+    <!-- class 54 Array Manipulation -->
+
+
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $names = ["C programming", "PHP programming", "Python programming"];
+
+     
+    // add value
+    echo $names[3] = "C++";
+    // or
+    echo $names[] = "java";
+
+    // change value 
+    echo $names[1] = "java programming";
+
+    // delete value 
+    unset($names[1]);
+
+
+
+
+
+
+
+    echo "<pre>";
+    print_r($names);
+    echo "</pre>";
+    ?>
+
+    <!-- class 55  array count -->
+
+
+
+
+
+
+
 
 
     <br>
