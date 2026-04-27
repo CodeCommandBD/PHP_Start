@@ -838,7 +838,19 @@ $full_name = 'first_name'
     $result = test();
     echo "test function";
     ?>
-    <!--  -->
+    <!-- class 49 mixed type -->
+
+    <?php 
+    echo "<br><br>";
+    
+    
+    function sumMixedType(mixed ...$numbers): mixed
+    {
+        return $numbers;
+    }
+    $result = sumMixedType(10, 5, "hello");
+    echo $result;
+    ?>
 
 
 
