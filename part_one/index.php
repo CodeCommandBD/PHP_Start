@@ -1138,7 +1138,7 @@ $full_name = 'first_name'
     ?>
 
 
-    <!-- Delete Multidimensional array  -->
+    <!-- class 60 Delete Multidimensional array  -->
 
 
     <br>
@@ -1191,6 +1191,32 @@ $full_name = 'first_name'
 
     pri_arr($student_info);
     ?>
+
+    <!-- class 61 string methods -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $name5 = "shanto";
+    $name2 = "shanto is a good man";
+    echo strlen($name5);
+    echo "<br><br>";
+    echo strrev($name5);
+    echo "<br><br>";
+    echo strpos($name2, $name5);
+    echo "<br><br>";
+
+    echo str_replace("man", "human", $name2);
+
+    ?>
+
+
+<!-- class  -->
+
+
+
+
+
 
 
     <br>
