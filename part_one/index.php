@@ -787,7 +787,8 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
 
-    function sumStatic() {
+    function sumStatic()
+    {
         static $count = 0;
         $count++;
         echo $count . "<br>";
@@ -797,8 +798,37 @@ $full_name = 'first_name'
     sumStatic();
     sumStatic();
     ?>
-    
 
+
+    <!-- class 47 return  -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function sumReturn(int $a, int $b)
+    {
+        $c = $a + $b;
+        return $c;
+    }
+    $result = sumReturn(10, 50);
+    echo $result;
+    ?>
+
+
+    <!-- class 48 union type -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    function sumUnionType(int $a, int $b) : int
+    {
+        $c = $a + $b;
+        return  $c;
+    }
+    $result = sumUnionType(10, 20);
+    echo $result;
+    ?>
 
 
 
