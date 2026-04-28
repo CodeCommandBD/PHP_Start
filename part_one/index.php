@@ -1307,9 +1307,30 @@ $full_name = 'first_name'
     echo "<br><br>";
     ?>
 
+    <!-- class 67 array sort and rsort by value  -->
+
+    <?php
+    $list = ["f", "a", "d", "g", "e"];
+    $list2 = ["f", "a", "d", "g", "e"];
+
+    sort($list);
+    echo "<br>";
+
+    rsort($list2);
+    echo "<br>";
+
+    foreach ($list as $single_list) {
+        echo $single_list . "<br>";
+    }
+
+    echo "<br>";
+
+    foreach ($list2 as $single_list) {
+        echo $single_list . "<br>";
+    }
+    ?>
     
-    
-   
+   <!-- class 68 associative array -->
 
 
 
