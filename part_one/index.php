@@ -1350,6 +1350,16 @@ $full_name = 'first_name'
     }
    ?>
 
+   <!-- class 69 array part 1  -->
+
+
+   <?php
+        $person = [ "shanto", "sonali", "loli"];
+
+
+        echo $person[2];
+   ?>
+
 
 
 
