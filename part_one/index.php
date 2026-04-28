@@ -1358,7 +1358,9 @@ $full_name = 'first_name'
         $person = [ "shanto", "sonali", "loli"];
 
 
-        echo $person[2];
+        $person = count($person);
+
+        echo $person;
    ?>
 
 
