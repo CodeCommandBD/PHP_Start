@@ -1330,7 +1330,25 @@ $full_name = 'first_name'
     }
     ?>
     
-   <!-- class 68 associative array -->
+   <!-- class 68 associative array sort and rsort by key -->
+
+   <?php 
+    $personInfo = [
+        'name' => "shanto",
+        "age" => 25,
+        "isLoggedIn" => true,
+        "message " => "hello "
+    ];
+
+    // asort($personInfo);
+    // arsort($personInfo);
+    // ksort($personInfo);
+
+
+    foreach($personInfo as $key => $person) {
+        echo $person ."<br>";
+    }
+   ?>
 
 
 
