@@ -1276,7 +1276,7 @@ $full_name = 'first_name'
     echo "<br><br>";
     ?>
 
-    
+
     <!-- class 65 float to int # -->
 
     <?php
@@ -1287,6 +1287,29 @@ $full_name = 'first_name'
     echo (int) $weight + 10;
     echo "<br><br>";
     ?>
+
+    <!-- class 66 math methods -->
+
+    <?php
+    echo "<br><br>";
+
+    echo max(2, 4, 52, 41, 30, 48, 62);
+    echo "<br><br>";
+    echo min(2, 4, 52, 41, 30, 48, 62);
+    echo "<br><br>";
+    echo abs(-10);
+    echo "<br><br>";
+    echo sqrt(16);
+    echo "<br><br>";
+    echo rand(10, 50);
+    echo "<br><br>";
+    echo round(10.50);
+    echo "<br><br>";
+    ?>
+
+    
+    
+   
 
 
 
