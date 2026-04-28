@@ -1211,7 +1211,82 @@ $full_name = 'first_name'
     ?>
 
 
-<!-- class  -->
+    <!-- class  62 int methods-->
+
+    <!-- PHP_INT_MAX() -->
+    <!-- PHP_INT_MIN() -->
+    <!-- PHP_INT_SIZE() -->
+    <!-- is_int( ) -->
+    <!-- is_integer() -->
+    <!-- is_long() -->
+
+
+    <?php
+    echo "<br><br>";
+    $product = 5000;
+
+
+    var_dump(PHP_INT_MAX);
+
+    echo "<br><br>";
+    var_dump(PHP_INT_MIN);
+
+    echo "<br><br>";
+    var_dump(PHP_INT_SIZE);
+
+    echo "<br><br>";
+    var_dump(is_int($product));
+
+    echo "<br><br>";
+    var_dump(is_integer($product));
+
+    echo "<br><br>";
+    var_dump(is_long($product));
+    ?>
+
+
+    <!-- class 63 float methods -->
+
+    <!-- filter_var() -->
+    <!-- is_float() -->
+    <!-- is_double() -->
+    <!-- is_real() -->
+
+    <?php
+    echo "<br><br>";
+    $weight = 70.5;
+
+    echo "<br>";
+    var_dump(is_float($weight));
+    echo "<br>";
+    var_dump(is_double($weight));
+    echo "<br>";
+    var_dump(filter_var($weight, FILTER_VALIDATE_FLOAT));
+
+    ?>
+
+    <!-- class 64 string to int # -->
+
+    <?php
+    echo "<br><br>";
+
+    $age = "25";
+
+    echo (int) $age + 10;
+    echo "<br><br>";
+    ?>
+
+    
+    <!-- class 65 float to int # -->
+
+    <?php
+    echo "<br><br>";
+
+    $weight = "25.5";
+
+    echo (int) $weight + 10;
+    echo "<br><br>";
+    ?>
 
 
 
