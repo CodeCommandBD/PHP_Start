@@ -1390,6 +1390,8 @@ $full_name = 'first_name'
 
     <!-- class 71 array part 3 (array cunk)-->
 
+    <!-- array cunk diye array ke tukra tukra kora hoy -->
+
     <?php
     $student_mark = [
         "Maths" => 85,
@@ -1465,9 +1467,10 @@ $full_name = 'first_name'
 
     <!-- class 73 (array count values)-->
 
+    <!-- array count values diye array er moddhe koto gulo same value ache ta gona kora hoy -->
 
      <?php
-    $student_names_1 = ["shanto", "saim", "nabil", "not available", "jonota"];
+    $student_names_1 = ["shanto", "saim", "nabil", "not available", "jonota", "shanto", "nabil"];
 
 
     $counter = array_count_values($student_names_1);
@@ -1476,7 +1479,28 @@ $full_name = 'first_name'
     ?>
 
 
-    <!--  -->
+    <!-- class 74 (array diff)-->   
+
+    <!-- duita array er moddhe koto gulo value onno ta te ache (badha) -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $name = ["shanto", "saim", "nabil"];
+    $name2 = ["shanto", "saim", "nabil", "jonota"];
+
+    $diff = array_diff($name2, $name);
+
+    echo "<pre>";
+    print_r($diff);
+    echo "</pre>";
+    ?>
+
+
+
+
+
+    
 
 
 
