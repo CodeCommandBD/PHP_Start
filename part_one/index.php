@@ -1557,6 +1557,29 @@ $full_name = 'first_name'
     ?>
 
 
+    <!-- class 76 (array fill ) -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $create_array = array_fill(0, 3, "shanto");
+
+    echo "<pre>";
+    print_r($create_array);
+    echo "</pre>";
+    ?>
+
+    <!-- class 77 (array fill keys) -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $create_array = array_fill_keys([0, 1, 2], "shanto");
+
+    echo "<pre>";
+    print_r($create_array);
+    echo "</pre>";
+    ?>
 
 
 
