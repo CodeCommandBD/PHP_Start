@@ -1587,7 +1587,48 @@ $full_name = 'first_name'
     echo "</pre>";
     ?>
 
-    <!-- class 78 -->
+    <!-- class 78 (array filter) -->
+
+    <!-- array filter diye array filter kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+    $student_mark = [5, 2, 4, 5, 7, 45, 41, 21, 66, 81, 95];
+
+    $filter = array_filter($student_mark, function ($value) {
+        return $value >= 20;
+    });
+
+    echo "<pre>";
+    print_r($filter);
+    echo "</pre>";
+    ?>
+    
+
+    <!-- class 79 (in array) -->
+
+    <!-- in array diye array te specific value search kora hoy -->  
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+    
+    $allow_file_ext = "pdf";
+    $file_formates = ["jpg", "png", "jpeg"];
+
+
+    $filter = in_array($allow_file_ext, $file_formates);
+
+    if($filter) {
+        echo "Valid file formate";
+    }else{
+        echo "Invalid file formate";
+    }
+
+    ?>
+
+    
 
 
 
