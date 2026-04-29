@@ -1604,11 +1604,11 @@ $full_name = 'first_name'
     print_r($filter);
     echo "</pre>";
     ?>
-    
+
 
     <!-- class 79 (in array) -->
 
-    <!-- in array diye array te specific value search kora hoy -->  
+    <!-- in array diye array te specific value search kora hoy -->
 
     <?php
     echo "<br>";
@@ -1620,17 +1620,17 @@ $full_name = 'first_name'
 
     $filter = in_array($allow_file_ext, $file_formates);
 
-    if($filter) {
+    if ($filter) {
         echo "Valid file formate";
-    }else{
+    } else {
         echo "Invalid file formate";
     }
     ?>
 
     <!-- class 80 (array flip)-->
-     
+
     <!-- array_flip() diye array er key and value swap kora hoy -->
-    <?php 
+    <?php
     echo "<br><br>";
     $student_mark = [
         "name" => "shanto",
@@ -1646,11 +1646,62 @@ $full_name = 'first_name'
     print_r($flip);
     echo "</pre>";
     ?>
-    
 
 
+    <!-- class 81 (array intersect and array intersect key ) -->
+
+    <!-- array_intersect() and array_intersect_key() diye array er moddhe same value and same key show kora hoy -->
+    <?php
+    echo "<br><br>";
+    $student_mark = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+    $student_mark_2 = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+
+    $intersect = array_intersect($student_mark, $student_mark_2);
+    $intersect_key = array_intersect_key($student_mark, $student_mark_2);
+
+    echo "<pre>";
+    print_r($intersect);
+    print_r($intersect_key);
+    echo "</pre>";
+    ?>
 
 
+    <!-- class 82 serializtion and unserializtion -->
+
+    <!-- serialization diye array ko string e convert kora hoy -->
+
+    <?php
+    $mylist = ['shanto', 'saim', 'nabil', 'jonota', 'monisa', 'komotar'];
+
+    $serialize = serialize($mylist);
+
+    echo "<pre>";
+    print_r($serialize);
+    echo "</pre>";
+
+    // unserialization diye string ke array te convert kora hoy -->
+
+    $unserialize = unserialize($serialize);
+
+    echo "<pre>";
+    print_r($unserialize);
+    echo "</pre>";
+
+    ?>
+
+    <!--  -->
 
 
 
