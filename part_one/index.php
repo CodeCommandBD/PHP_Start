@@ -1559,6 +1559,8 @@ $full_name = 'first_name'
 
     <!-- class 76 (array fill ) -->
 
+    <!-- array_fill() diye array toiri kora hoy (index, value) -->
+
     <?php
     echo "<br>";
     echo "<br>";
@@ -1571,10 +1573,14 @@ $full_name = 'first_name'
 
     <!-- class 77 (array fill keys) -->
 
+    <!-- array_fill_keys() diye array toiri kora hoy (key, value) -->
+     
     <?php
     echo "<br>";
     echo "<br>";
-    $create_array = array_fill_keys([0, 1, 2], "shanto");
+    $work = ["name", "age", "roll", "class", "section"];
+
+    $create_array = array_fill_keys($work, "jonota");
 
     echo "<pre>";
     print_r($create_array);
