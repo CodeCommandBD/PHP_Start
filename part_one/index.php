@@ -1463,12 +1463,20 @@ $full_name = 'first_name'
 
 
 
-<!--  -->
+    <!-- class 73 (array count values)-->
 
 
+     <?php
+    $student_names_1 = ["shanto", "saim", "nabil", "not available", "jonota"];
 
 
+    $counter = array_count_values($student_names_1);
 
+    var_dump($counter);
+    ?>
+
+
+    <!--  -->
 
 
 
