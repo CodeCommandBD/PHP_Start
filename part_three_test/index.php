@@ -16,14 +16,32 @@ declare(strict_types=1);
 <body>
 
 
-    <form action="" method="post">
+    <form action="indextest.php" method="post">
+
+        <label>Title Name</label>
+        <input type="text" name="title" placeholder="Enter Title Name">
+        <br>
+        <br>
+        <label>Package price</label>
+        <input type="text" name="package" placeholder="Enter Package Price">
+        <br>
+        <br>
+        <label>Package Plane</label>
+        <input type="text" name="plan" placeholder="Enter Package Plan">
+        <br>
+        <br>
+
+
 
         <div class="field_wrapper">
             <div>
-                <input type="text" name="field_name[]" value="" />
+                <label>Topics</label>
+                <input type="text" name="field_name[]" value="" placeholder="Enter Topics"/>
                 <a href="javascript:void(0);" class="add_button" title="Add field">+</a>
             </div>
         </div>
+        <br>
+        <br>
         <input type="submit" name="submit" value="Submit">
     </form>
 
@@ -40,7 +58,7 @@ declare(strict_types=1);
             var maxField = 10; 
             var addButton = $('.add_button'); 
             var wrapper = $('.field_wrapper'); 
-            var fieldHTML = '<div><input type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">-</a></div>'; 
+            var fieldHTML = '<div><br><label>Topics</label><input type="text" name="field_name[]" value=""/><a href="javascript:void(0);" class="remove_button">-</a></div>'; 
             var x = 1; 
 
             
