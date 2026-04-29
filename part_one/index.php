@@ -1367,17 +1367,44 @@ $full_name = 'first_name'
 
     ?>
 
-    <!-- class 70 array part 2 -->
+    <!-- class 70 array part 2 (key upper/lower case)-->
 
     <?php
+    echo "<br>";
+    echo "<br>";
 
-    
+    $student_mark = [
+        "Maths" => 85,
+        "English" => 95,
+        "Chemistry" => 75,
+        "Computer" => 85,
+    ];
 
+    $change_key_case = array_change_key_case($student_mark, CASE_UPPER);
 
+    foreach ($change_key_case as $key => $value) {
+        echo $key . " = " . $value . "<br>";
+    }
 
     ?>
 
+    <!-- class 71 array part 3 (array cunk)-->
 
+    <?php
+    $student_mark = [
+        "Maths" => 85,
+        "English" => 95,
+        "Chemistry" => 75,
+        "Computer" => 85,
+        "Accounting" => 60
+    ];
+
+    $array_cunk = array_chunk($student_mark, 2, true);
+
+    echo "<pre>";
+    print_r($array_cunk);
+    echo "</pre>";
+    ?>
 
 
 
