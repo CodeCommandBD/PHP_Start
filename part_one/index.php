@@ -1410,7 +1410,7 @@ $full_name = 'first_name'
     <!-- class 71 array part 3 (array column)-->
 
     <!-- array column diye multidimensional array theke kono ekta key er value k alada kora hoy -->
-     
+
     <?php
     $student_mark = [
         [
@@ -1446,9 +1446,9 @@ $full_name = 'first_name'
     ?>
 
 
-    <!-- class 72 (array combine and array pad ) -->
+    <!-- class 72 (array combine) -->
 
-    <!-- duita array er value k key banano hoy, duita array er value soman thakte hobe -->
+    <!-- duita indexed array er value k key banano hoy, duita array er value soman thakte hobe -->
     <?php
     $student_names = ["shanto", "saim", "nabil"];
     $student_marks = [85, 95, 75];
@@ -1458,9 +1458,12 @@ $full_name = 'first_name'
     echo "<pre>";
     print_r($student_mark);
     echo "</pre>";
-
-
     ?>
+
+
+
+
+<!--  -->
 
 
 
