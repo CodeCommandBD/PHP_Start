@@ -1469,7 +1469,7 @@ $full_name = 'first_name'
 
     <!-- array count values diye array er moddhe koto gulo same value ache ta gona kora hoy -->
 
-     <?php
+    <?php
     $student_names_1 = ["shanto", "saim", "nabil", "not available", "jonota", "shanto", "nabil"];
 
 
@@ -1479,7 +1479,7 @@ $full_name = 'first_name'
     ?>
 
 
-    <!-- class 74 (array diff)-->   
+    <!-- class 74 (array diff)-->
 
     <!-- duita array er moddhe koto gulo value onno ta te ache (badha) -->
 
@@ -1488,7 +1488,7 @@ $full_name = 'first_name'
     echo "<br>";
     $name = ["shanto", "saim", "nabil"];
     $name2 = ["shanto", "saim", "kabila", "jonota"];
-    $name3 = ["shanto", "saim", "nabil", "monisa","komotar"];
+    $name3 = ["shanto", "saim", "nabil", "monisa", "komotar"];
 
     $diff = array_diff($name3, $name2, $name);
 
@@ -1498,11 +1498,65 @@ $full_name = 'first_name'
     ?>
 
 
-    <!--  -->
+    <!-- class 75 (array diff assosicative) -->
+
+    <!-- key and value both  comparison korbe -->
+
+    <?php
+
+    $student_names_2 = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+    $student_names_3 = [
+        "name" => "shami",
+        "age" => 25,
+        "roll" => 58,
+        "class" => "10th",
+        "section" => "A"
+    ];
+
+
+    $diff = array_diff_assoc($student_names_2, $student_names_3);
+
+    echo "<pre>";
+    print_r($diff);
+    echo "</pre>";
+    ?>
 
 
 
-    
+    <!-- key theke value comparison korbe -->
+
+    <?php
+
+    $student_names_2 = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+    $student_names_3 = [
+        "name" => "shanto",
+        // "age" => 22,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+
+
+    $diff = array_diff_key($student_names_2, $student_names_3);
+
+    echo "<pre>";
+    print_r($diff);
+    echo "</pre>";
+    ?>
+
+
 
 
 
