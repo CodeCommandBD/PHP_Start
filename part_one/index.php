@@ -1613,7 +1613,7 @@ $full_name = 'first_name'
     <?php
     echo "<br>";
     echo "<br>";
-    
+
     $allow_file_ext = "pdf";
     $file_formates = ["jpg", "png", "jpeg"];
 
@@ -1625,7 +1625,6 @@ $full_name = 'first_name'
     }else{
         echo "Invalid file formate";
     }
-
     ?>
 
     
