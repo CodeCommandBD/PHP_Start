@@ -1487,9 +1487,10 @@ $full_name = 'first_name'
     echo "<br>";
     echo "<br>";
     $name = ["shanto", "saim", "nabil"];
-    $name2 = ["shanto", "saim", "nabil", "jonota"];
+    $name2 = ["shanto", "saim", "kabila", "jonota"];
+    $name3 = ["shanto", "saim", "nabil", "monisa","komotar"];
 
-    $diff = array_diff($name2, $name);
+    $diff = array_diff($name3, $name2, $name);
 
     echo "<pre>";
     print_r($diff);
@@ -1497,6 +1498,7 @@ $full_name = 'first_name'
     ?>
 
 
+    <!--  -->
 
 
 
