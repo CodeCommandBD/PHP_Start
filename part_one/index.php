@@ -1627,6 +1627,25 @@ $full_name = 'first_name'
     }
     ?>
 
+    <!-- class 80 (array flip)-->
+     
+    <!-- array_flip() diye array er key and value swap kora hoy -->
+    <?php 
+    echo "<br><br>";
+    $student_mark = [
+        "name" => "shanto",
+        "age" => 25,
+        "roll" => 57,
+        "class" => "10th",
+        "section" => "A"
+    ];
+
+    $flip = array_flip($student_mark);
+
+    echo "<pre>";
+    print_r($flip);
+    echo "</pre>";
+    ?>
     
 
 
