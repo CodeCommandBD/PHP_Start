@@ -13,10 +13,7 @@ declare(strict_types=1);
 
 <body>
     <?php
-        $person = [ "sona", "sonali", "loli"];
-
-
-        echo $person[2]
+       
     ?>
 </body>
 

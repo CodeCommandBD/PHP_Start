@@ -1329,10 +1329,10 @@ $full_name = 'first_name'
         echo $single_list . "<br>";
     }
     ?>
-    
-   <!-- class 68 associative array sort and rsort by key -->
 
-   <?php 
+    <!-- class 68 associative array sort and rsort by key -->
+
+    <?php
     $personInfo = [
         'name' => "shanto",
         "age" => 25,
@@ -1345,20 +1345,37 @@ $full_name = 'first_name'
     // ksort($personInfo);
 
 
-    foreach($personInfo as $key => $person) {
-        echo $person ."<br>";
+    foreach ($personInfo as $key => $person) {
+        echo $person . "<br>";
     }
-   ?>
+    ?>
 
-   <!-- class 69 array part 1  -->
+    <!-- class 69 array part 1  -->
 
-   
 
-   <?php
-        $person = [ "shanto", "sonali", "loli"];
 
-        
-   ?>
+    <?php
+    echo "<br>";
+    $product_info[0] = "potato";
+    $product_info[1] = "tomato";
+    $product_info[2] = "onion";
+    $product_info[3] = "potato";
+
+    for ($i = 0; $i < count($product_info); $i++) {
+        echo $product_info[$i] . "<br>";
+    }
+
+    ?>
+
+    <!-- class 70 array part 2 -->
+
+    <?php
+
+    
+
+
+
+    ?>
 
 
 
