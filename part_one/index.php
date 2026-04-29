@@ -1559,7 +1559,7 @@ $full_name = 'first_name'
 
     <!-- class 76 (array fill ) -->
 
-    <!-- array_fill() diye array toiri kora hoy (index, value) -->
+    <!-- array_fill() diye array toiri kora hoy (koto Index theke shuru hobe, koto index porjonto, ki value dibo) -->
 
     <?php
     echo "<br>";
@@ -1573,8 +1573,8 @@ $full_name = 'first_name'
 
     <!-- class 77 (array fill keys) -->
 
-    <!-- array_fill_keys() diye array toiri kora hoy (key, value) -->
-     
+    <!-- array_fill_keys() diye array toiri kora hoy (key, value) eita shudu matro associative array te use hoy -->
+
     <?php
     echo "<br>";
     echo "<br>";
