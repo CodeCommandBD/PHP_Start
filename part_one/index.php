@@ -1407,6 +1407,60 @@ $full_name = 'first_name'
     ?>
 
 
+    <!-- class 71 array part 3 (array column)-->
+
+    <?php
+    $student_mark = [
+        [
+            "name" => "shanto",
+            "age" => 25,
+            "roll" => 57,
+            "class" => "10th",
+            "section" => "A"
+        ],
+        [
+            "name" => "saim",
+            "age" => 22,
+            "roll" => 58,
+            "class" => "10th",
+            "section" => "A"
+        ],
+        [
+            "name" => "nabil",
+            "age" => 20,
+            "roll" => 59,
+            "class" => "10th",
+            "section" => "A"
+        ]
+    ];
+
+    $student = array_column($student_mark, "name");
+
+    echo "<pre>";
+    print_r($student);
+    echo "</pre>";
+
+
+    ?>
+
+
+    <!-- class 72 (array combine and array pad ) -->
+
+    <?php
+    
+    ?>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
