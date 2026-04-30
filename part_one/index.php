@@ -1701,14 +1701,330 @@ $full_name = 'first_name'
 
     ?>
 
-    <!--  -->
+    <!-- class 83 (super global variable)-->
+
+    <!--  
+    $GLOBALS, 
+    $_SERVER, 
+    $_REQUEST, 
+    $_GET, 
+    $_POST, 
+    $_COOKIE, 
+    $_SESSION, 
+    $_FILES, 
+    $_ENV   
+    -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    // GLOBAL() show kora hoy
+
+    $person_name = "shanto";
+
+    function show_person_name(){
+      echo $GLOBALS['person_name'];
+    }
+    show_person_name();
+
+    echo "<br>";
+    echo "<br>";
+
+    ?>
 
 
 
 
-    <br>
-    <br>
-    <br>
+
+    <!-- server variable ($_SERVER) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+
+    // echo $_SERVER["PHP_SELF"];
+
+    // echo $_SERVER["SERVER_NAME"];
+
+    // echo $_SERVER["SERVER_ADDR"];
+
+    // echo $_SERVER["SERVER_PROTOCOL"];
+
+    // echo $_SERVER["SERVER_SOFTWARE"];
+
+    // echo $_SERVER["SERVER_PORT"];
+
+
+    // echo $_SERVER["REQUEST_METHOD"];
+
+    // echo $_SERVER["REMOTE_ADDR"];
+
+    // echo $_SERVER["REMOTE_HOST"];
+
+    // echo $_SERVER["HTTP_HOST"];
+
+    // echo $_SERVER["SERVER_REQUEST_URI"];
+    
+    echo "<br>";
+    ?>
+
+
+
+
+
+    <!-- request variable ($_REQUEST) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    // echo $_REQUEST["name"];
+
+    // echo $_REQUEST["age"];
+
+    // echo $_REQUEST["roll"];
+
+    // echo $_REQUEST["class"];
+
+    // echo $_REQUEST["section"];
+
+    echo "<br>";
+    ?>
+
+
+
+    <!-- get variable ($_GET) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_GET["name"];
+    echo $_GET["age"];
+    echo $_GET["roll"];
+    echo $_GET["class"];
+    echo $_GET["section"];
+
+    echo "<br>";
+    ?>
+
+
+
+    <!-- post variable ($_POST) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_POST["name"];
+    echo $_POST["age"];
+    echo $_POST["roll"];
+    echo $_POST["class"];
+    echo $_POST["section"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- cookie variable ($_COOKIE) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_COOKIE["name"];
+    echo $_COOKIE["age"];
+    echo $_COOKIE["roll"];
+    echo $_COOKIE["class"];
+    echo $_COOKIE["section"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- session variable ($_SESSION) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_SESSION["name"];
+    echo $_SESSION["age"];
+    echo $_SESSION["roll"];
+    echo $_SESSION["class"];
+    echo $_SESSION["section"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- file variable ($_FILES) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_FILES["name"];
+    echo $_FILES["age"];
+    echo $_FILES["roll"];
+    echo $_FILES["class"];
+    echo $_FILES["section"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- env variable ($_ENV) show kora hoy  -->
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    echo $_ENV["name"];
+    echo $_ENV["age"];
+    echo $_ENV["roll"];
+    echo $_ENV["class"];
+    echo $_ENV["section"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 84 (cookie)-->
+
+    <!-- cookie diye browser e data store kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    setcookie("name", "shanto", time() + 3600, "/");
+    setcookie("age", "25", time() + 3600, "/");
+    setcookie("roll", "57", time() + 3600, "/");
+    setcookie("class", "10th", time() + 3600, "/");
+    setcookie("section", "A", time() + 3600, "/");
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 85 (session)-->
+
+    <!-- session diye server e data store kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    session_start();
+
+    $_SESSION["name"] = "shanto";
+    $_SESSION["age"] = "25";
+    $_SESSION["roll"] = "57";
+    $_SESSION["class"] = "10th";
+    $_SESSION["section"] = "A";
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 86 (file upload)-->
+
+    <!-- file upload diye file upload kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 87 (file download)-->
+
+    <!-- file download diye file download kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 88 (file management)-->
+
+    <!-- file management diye file management kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 89 (file system)-->
+
+    <!-- file system diye file system management kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 90 (file handling)-->
+
+    <!-- file handling diye file handling kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 91 (file upload and download with progress bar)-->
+
+    <!-- file upload and download with progress bar diye file upload and download with progress bar show kora hoy -->
+
+    <?php
+    echo "<br>";
+    echo "<br>";
+
+    $file_name = $_FILES["name"];
+    $file_size = $_FILES["size"];
+    $file_type = $_FILES["type"];
+    $file_tmp = $_FILES["tmp_name"];
+
+    echo "<br>";
+    ?>
+
+
+    <!-- class 92 (file upload and download with progress bar and encryption and decryption)-->
     <br>
     <br>
     <br>
