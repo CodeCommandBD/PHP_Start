@@ -1723,8 +1723,9 @@ $full_name = 'first_name'
 
     $person_name = "shanto";
 
-    function show_person_name(){
-      echo $GLOBALS['person_name'];
+    function show_person_name()
+    {
+        echo $GLOBALS['person_name'];
     }
     show_person_name();
 
@@ -1765,7 +1766,7 @@ $full_name = 'first_name'
     // echo $_SERVER["HTTP_HOST"];
 
     // echo $_SERVER["SERVER_REQUEST_URI"];
-    
+
     echo "<br>";
     ?>
 
@@ -1794,93 +1795,94 @@ $full_name = 'first_name'
 
 
     <!-- get variable ($_GET) show kora hoy  -->
+
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_GET["name"];
-    echo $_GET["age"];
-    echo $_GET["roll"];
-    echo $_GET["class"];
-    echo $_GET["section"];
+    // echo $_GET["name"];
+    // echo $_GET["age"];
+    // echo $_GET["roll"];
+    // echo $_GET["class"];
+    // echo $_GET["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
 
     <!-- post variable ($_POST) show kora hoy  -->
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_POST["name"];
-    echo $_POST["age"];
-    echo $_POST["roll"];
-    echo $_POST["class"];
-    echo $_POST["section"];
+    // echo $_POST["name"];
+    // echo $_POST["age"];
+    // echo $_POST["roll"];
+    // echo $_POST["class"];
+    // echo $_POST["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
     <!-- cookie variable ($_COOKIE) show kora hoy  -->
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_COOKIE["name"];
-    echo $_COOKIE["age"];
-    echo $_COOKIE["roll"];
-    echo $_COOKIE["class"];
-    echo $_COOKIE["section"];
+    // echo $_COOKIE["name"];
+    // echo $_COOKIE["age"];
+    // echo $_COOKIE["roll"];
+    // echo $_COOKIE["class"];
+    // echo $_COOKIE["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
     <!-- session variable ($_SESSION) show kora hoy  -->
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_SESSION["name"];
-    echo $_SESSION["age"];
-    echo $_SESSION["roll"];
-    echo $_SESSION["class"];
-    echo $_SESSION["section"];
+    // echo $_SESSION["name"];
+    // echo $_SESSION["age"];
+    // echo $_SESSION["roll"];
+    // echo $_SESSION["class"];
+    // echo $_SESSION["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
     <!-- file variable ($_FILES) show kora hoy  -->
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_FILES["name"];
-    echo $_FILES["age"];
-    echo $_FILES["roll"];
-    echo $_FILES["class"];
-    echo $_FILES["section"];
+    // echo $_FILES["name"];
+    // echo $_FILES["age"];
+    // echo $_FILES["roll"];
+    // echo $_FILES["class"];
+    // echo $_FILES["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
     <!-- env variable ($_ENV) show kora hoy  -->
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    echo $_ENV["name"];
-    echo $_ENV["age"];
-    echo $_ENV["roll"];
-    echo $_ENV["class"];
-    echo $_ENV["section"];
+    // echo $_ENV["name"];
+    // echo $_ENV["age"];
+    // echo $_ENV["roll"];
+    // echo $_ENV["class"];
+    // echo $_ENV["section"];
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
@@ -1889,16 +1891,16 @@ $full_name = 'first_name'
     <!-- cookie diye browser e data store kora hoy -->
 
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    setcookie("name", "shanto", time() + 3600, "/");
-    setcookie("age", "25", time() + 3600, "/");
-    setcookie("roll", "57", time() + 3600, "/");
-    setcookie("class", "10th", time() + 3600, "/");
-    setcookie("section", "A", time() + 3600, "/");
+    // setcookie("name", "shanto", time() + 3600, "/");
+    // setcookie("age", "25", time() + 3600, "/");
+    // setcookie("roll", "57", time() + 3600, "/");
+    // setcookie("class", "10th", time() + 3600, "/");
+    // setcookie("section", "A", time() + 3600, "/");
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
@@ -1907,18 +1909,18 @@ $full_name = 'first_name'
     <!-- session diye server e data store kora hoy -->
 
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    session_start();
+    // session_start();
 
-    $_SESSION["name"] = "shanto";
-    $_SESSION["age"] = "25";
-    $_SESSION["roll"] = "57";
-    $_SESSION["class"] = "10th";
-    $_SESSION["section"] = "A";
+    // $_SESSION["name"] = "shanto";
+    // $_SESSION["age"] = "25";
+    // $_SESSION["roll"] = "57";
+    // $_SESSION["class"] = "10th";
+    // $_SESSION["section"] = "A";
 
-    echo "<br>";
+    // echo "<br>";
     ?>
 
 
@@ -1927,15 +1929,46 @@ $full_name = 'first_name'
     <!-- file upload diye file upload kora hoy -->
 
     <?php
-    echo "<br>";
-    echo "<br>";
+    // echo "<br>";
+    // echo "<br>";
 
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
+    // $file_name = $_FILES["name"];
+    // $file_size = $_FILES["size"];
+    // $file_type = $_FILES["type"];
+    // $file_tmp = $_FILES["tmp_name"];
 
-    echo "<br>";
+    // echo "<br>";
+    ?>
+
+    <!-- class 87 readfile() -->
+
+    <!-- readfile() diye file read kora hoy -->
+
+    <?php
+    // 1. readfile()
+    // 2. $file = fopen('file name', "read er mode r") or die("File not found")
+    //      fread($file, filesize('file name'))
+    //      fclose($file)
+
+
+    // 3. fgets($file, filesize("file name")) file er first line read korte eta use kora hoy
+
+
+    // 4. fgetc($file, filesize("file name")) file er word by word character read korte eta use kora hoy
+
+
+    // 5. while(!feof($file)){
+    //    $line = fgets($file, filesize("file name"));
+    //    echo $line;
+    // } file er ekta ekta kore sob line read korte eta use kora hoy
+
+
+    // 6. fread($file) diye file read kora hoy
+
+    // 7. fwrite($file, $text) diye file e text write kora hoy
+
+    echo "<br><br><br>";
+
     ?>
 
 
@@ -1943,9 +1976,6 @@ $full_name = 'first_name'
 
 
 
-
-
-   
 
 
     <!-- class 92 (file upload and download with progress bar and encryption and decryption)-->
