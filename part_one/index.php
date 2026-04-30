@@ -1939,89 +1939,13 @@ $full_name = 'first_name'
     ?>
 
 
-    <!-- class 87 (file download)-->
-
-    <!-- file download diye file download kora hoy -->
-
-    <?php
-    echo "<br>";
-    echo "<br>";
-
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
-
-    echo "<br>";
-    ?>
 
 
-    <!-- class 88 (file management)-->
-
-    <!-- file management diye file management kora hoy -->
-
-    <?php
-    echo "<br>";
-    echo "<br>";
-
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
-
-    echo "<br>";
-    ?>
 
 
-    <!-- class 89 (file system)-->
-
-    <!-- file system diye file system management kora hoy -->
-
-    <?php
-    echo "<br>";
-    echo "<br>";
-
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
-
-    echo "<br>";
-    ?>
 
 
-    <!-- class 90 (file handling)-->
-
-    <!-- file handling diye file handling kora hoy -->
-
-    <?php
-    echo "<br>";
-    echo "<br>";
-
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
-
-    echo "<br>";
-    ?>
-
-
-    <!-- class 91 (file upload and download with progress bar)-->
-
-    <!-- file upload and download with progress bar diye file upload and download with progress bar show kora hoy -->
-
-    <?php
-    echo "<br>";
-    echo "<br>";
-
-    $file_name = $_FILES["name"];
-    $file_size = $_FILES["size"];
-    $file_type = $_FILES["type"];
-    $file_tmp = $_FILES["tmp_name"];
-
-    echo "<br>";
-    ?>
+   
 
 
     <!-- class 92 (file upload and download with progress bar and encryption and decryption)-->
