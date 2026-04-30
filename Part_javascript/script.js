@@ -1,16 +1,34 @@
-let btn = document.getElementById('btn');
-let p = document.createElement('p')
+let body = document.getElementById('body')
+let commentbox = document.getElementById('comment')
+let btn = document.getElementById('btn')
 
-body.appendChild(p)
+let ul = document.createElement('ul')
 
-btn.addEventListener('click', ()=>{
-    p.innerHTML="hello world 1"
+
+
+body.appendChild(ul)
+
+
+
+btn.addEventListener('click',()=>{
+    let commentboxValue = commentbox.value;
+
+    if(commentboxValue !== ""){
+        let li = document.createElement('li')
+        li.innerText = commentboxValue;
+        ul.appendChild(li);
+    }
+
+
+    commentbox.value = ''
+  
 })
 
 
-function button2(){
-    p.innerHTML="hello world 2"
-}
+
+
+
+
 
 
 
