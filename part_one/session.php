@@ -4,4 +4,7 @@
     $_SESSION['age'] = 25;
     $_SESSION['job'] = 'Web Developer';
     $_SESSION['address'] = 'Mirpur';
+
+    
+
 ?>
