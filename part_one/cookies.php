@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php 
+    // setcookie(name, value, expire, path, domain, secure, httponly)
+
+
+    setcookie('cookieName', 'tecnology', time()+20000, '/');
+    $cookie_value = $_COOKIE['cookieName'];
+    echo $cookie_value;
+
+    // Delete Cookie 
+    // setcookie('cookieName', '', time()-20000, '/');
+
+?>
