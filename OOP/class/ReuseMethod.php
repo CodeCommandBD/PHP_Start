@@ -1,11 +1,15 @@
 <?php 
     require_once "class.php";
-    $student = new Person();
-    
-    echo $student->getAddress("rakib","23","dhaka");
+
+    $student = new Person( "riday","22","Gazipur");
+
+    echo $student->getAddress();
     echo "<br>";
-    echo $student->getAddress("shanto","25","khulna");
-    echo "<br>";
-    echo $student->getAddress("rahim","21","rajshahi");
+
+    // echo $student->getAddress("rakib","23","dhaka");
+    // echo "<br>";
+    // echo $student->getAddress("shanto","25","khulna");
+    // echo "<br>";
+    // echo $student->getAddress("rahim","21","rajshahi");
 
 ?>

@@ -10,11 +10,23 @@
         public $person_address;
 
 
+
+        // constructor 
+        public function __construct($person_name,$person_age,$person_address)
+        {
+            echo "this is constructor<br>";
+            $this->person_name = $person_name;
+            $this->person_age = $person_age;
+            $this->person_address = $person_address;
+
+        }
+
+
         // method
-        public function getAddress( $person_name , $person_age , $person_address) {
+        public function getAddress() {
             return 
-            $this->person_name = $person_name . "," . 
-            $this->person_age = $person_age . "," . $this->person_address = $person_address;
+            $this->person_name . "," . 
+            $this->person_age . "," . $this->person_address;
 
 
         }       
