@@ -17,3 +17,7 @@
                         <!-- magic method -->
                           <!-- getter and setter -->
                            <!-- namespace -->
+                            <!-- access modifier -->
+                             <!-- public -->
+                              <!-- protected -->
+                               <!-- private -->
