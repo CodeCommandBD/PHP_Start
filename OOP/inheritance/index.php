@@ -1,4 +1,7 @@
 <?php
+// obosoi public hote hobe na dile error hobe 
+
+
 
     class FatherInharitence{
         public $num1 = 10;
