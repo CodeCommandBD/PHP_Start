@@ -1,6 +1,6 @@
 <?php
 
-    class Father{
+    class FatherInharitence{
         public $num1 = 10;
         public $num2 = 20;
 
@@ -12,14 +12,10 @@
         }
     }
 
-    class son extends Father{
+    class sonInharitence extends FatherInharitence{
         public $num3 = 30;
 
-        
     }
 
-    $sonOBJ = new son();
-
-    
-
+    $newSon = new sonInharitence();
 ?>
